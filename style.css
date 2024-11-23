@@ -11,13 +11,25 @@ h1, h2{
     color: seagreen;
     text-align: center;
 }
-p, footer {
+p, footer , dt, dl, di, ul{
     color: seagreen;
     font-size: large;
 }
 div {
-    background-color: palegoldenrod;
+    background-color: lemonchiffon;
     color: seagreen;
+}
+div.gallery {
+    border: 1px solid #ccc;
+    flex: 50%;
+}
+div.gallery img {
+    width: 20%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
 }
 .row {
     display: flex;
@@ -33,3 +45,7 @@ a {
     text-decoration: none;
     color: lemonchiffon;
 }
+#grad1 {
+    height: 200px;
+    background-image: linear-gradient(to right, rgba(255,250,205,1), rgba(46, 139, 87,1));
+  }
