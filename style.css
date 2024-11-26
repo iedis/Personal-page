@@ -1,3 +1,6 @@
+* {
+    font-family: "Raleway", sans-serif;
+}
 .header {
     padding: 10px;
     text-align: center;
@@ -31,6 +34,7 @@ h1, h2{
 p, footer , dt, dl, di, ul, li{
     color: seagreen;
     font-size: large;
+    margin: 6px;
 }
 div {
     background-color: lemonchiffon;
@@ -50,16 +54,20 @@ div.desc {
 }
 .row {
     display: flex;
+    margin: 6px;
+    border-radius: 4px;
 }
 .column1 {
     flex: 25%;
     padding: 10px;
     background-color: lemonchiffon;
+    border-radius: 4px;
 }
 .column2 {
     flex: 75%;
     padding: 10px;
     background-color: palegoldenrod;
+    border-radius: 4px;
 }
 img {
     object-fit: contain;
@@ -89,4 +97,13 @@ label {
     .row, .navbar {   
       flex-direction:column;
     }
-} 
+}
+.circle {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(61, 183, 114);
+    border-radius: 50%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
