@@ -11,6 +11,7 @@ img {
     max-width: 10000px;
     position: relative;
     margin: auto;
+    border-radius: 6px;
 }
 .prev, .next {
     cursor: pointer;
@@ -19,7 +20,7 @@ img {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: seagreen;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
