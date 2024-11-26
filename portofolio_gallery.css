@@ -1,0 +1,139 @@
+.container {
+    position: relative;
+    width: 100%;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.container:hover .image {
+    opacity: 0.3;
+}  
+.container:hover .middle {
+    opacity: 1;
+}
+.text {
+    background-color: lemonchiffon;
+    color: seagreen;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 4px;
+}
+div.pgallery {
+    border: 3px solid white;
+    margin: 6px;
+}
+div.pgallery:hover {
+    border: 3px solid lemonchiffon;
+}
+div.pgallery img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+    .row, .navbar {   
+      flex-direction:column;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    font-family: "Raleway", sans-serif
+}
+.header {
+    padding: 10px;
+    text-align: center;
+    color: lemonchiffon;
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: lemonchiffon;
+}
+.navbar {
+    display: flex;
+    background-color: seagreen;
+    border-radius: 4px;
+}
+.navbar a {
+    color: palegoldenrod;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 24px;
+}
+.navbar a:hover {
+    color: seagreen;
+    background-color: lemonchiffon;
+}
+h1, h2{
+    color: seagreen;
+    text-align: center;
+}
+p, footer , dt, dl, di, ul, li{
+    color: seagreen;
+    font-size: large;
+}
+.row {
+    display: flex;
+}
+.column1 {
+    flex: 25%;
+    padding: 10px;
+    background-color: lemonchiffon;
+}
+.column2 {
+    flex: 75%;
+    padding: 10px;
+    background-color: palegoldenrod;
+}
+a {
+    text-decoration: none;
+    color: lemonchiffon;
+}
+#grad1 {
+    background-image: linear-gradient(to right, rgba(255,250,205,1), rgba(46, 139, 87,1));
+}
